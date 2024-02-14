@@ -6,7 +6,6 @@ def beolvasas():
     with open('sneakers.csv', 'r', encoding='utf-8') as fajl:
         sorok = fajl.readlines()
         keys = sorok[0].strip().split(',')
-        print(sorok)
         for sor in sorok[1:]:
             ertek = sor.strip().split(',')
             cipok.append(dict(zip(keys, ertek)))
